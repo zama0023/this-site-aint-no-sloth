@@ -1,0 +1,59 @@
+repo: 'this-site-aint-no-sloth'
+canvasCourse: 'web-dev-3'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    performance: true
+    has:
+      - ['link[href*="modules.css"]', 'The `modules.css` file should be included']
+      - ['link[href*="type.css"]', 'The `type.css` file should be included']
+      - 'main'
+      - 'img'
+      - 'h1'
+      - 'figure figcaption'
+    search:
+      - 'This site ain’t no sloth'
+      - 'The Mighty Sloth'
+      - 'Megalonychidae'
+      - 'Pilosa'
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    has:
+      - ['html']
+    search:
+      - 'Verdana'
+      - 'Georgia'
+      - '48px'
+      - 'url\('
+      - 'linear-gradient'
+      - '#bea586'
+      - 'rgba\(28\, 14\, 0'
+    searchNot:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+  - path: 'css/modules.css'
+    valid: true
+    bestPractices: true
+  - path: 'css/type.css'
+    valid: true
+    bestPractices: true
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 400, 608, 960, 1440]
