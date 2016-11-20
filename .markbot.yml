@@ -15,7 +15,6 @@ html:
     valid: true
     bestPractices: true
     outline: true
-    performance: true
     has:
       - ['link[href*="modules.css"]', 'The `modules.css` file should be included']
       - ['link[href*="type.css"]', 'The `type.css` file should be included']
@@ -23,6 +22,8 @@ html:
       - 'img'
       - 'h1'
       - 'figure figcaption'
+    hasNot:
+      - ['link[href*="grid"]', 'The `grid.css` file should not be included']
     search:
       - 'This site ain’t no sloth'
       - 'The Mighty Sloth'
@@ -64,3 +65,6 @@ files:
     maxWidth: 1500
     maxHeight: 1100
     smushed: true
+
+performance:
+  - path: 'index.html'
