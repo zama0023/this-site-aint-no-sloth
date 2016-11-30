@@ -20,7 +20,7 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/this-site-a
 ## Details
 
 - *Typefaces:* `Verdana`, `Georgia`
-- *Border thickness:* `3px`
+- *Border thickness:* `2px`
 - *Colours:* `#fff`, `#000`, `#bea586`, `rgb(28, 14, 0)` (with many different opacities)
 - *Pattern size:* `48px`
 - *Use:* `modules.css` & `type.css` — `grid.css` isn’t necessary
