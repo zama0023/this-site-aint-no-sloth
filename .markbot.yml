@@ -6,7 +6,6 @@ inherit:
   - git-2
   - html
   - css
-  - screenshots-all
 
 html:
   - path: 'index.html'
@@ -50,3 +49,12 @@ files:
 
 performance:
   - path: 'index.html'
+
+screenshots:
+  - path: 'index.html'
+    sizes:
+      320: 18
+      400: 18
+      608: 18
+      960: 17
+      1440: 17
